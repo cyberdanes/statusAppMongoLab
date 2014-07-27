@@ -1,0 +1,10 @@
+extends layout
+
+block content
+    h1= Status
+    form#formAddStatus(name="addstatus",method="post",action="/addstatus")
+        input#inputUserName(type="text", placeholder="username", name="username")
+        input#inputYesterday(type="text", placeholder="yesterday", name="yesterday")
+        input#inputToday(type="text", placeholder="today", name="today")
+        input#inputImpediments(type="text", placeholder="impediments", name="impediments")
+        button#btnSubmit(type="submit") submit

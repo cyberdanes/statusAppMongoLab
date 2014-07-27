@@ -1,7 +1,0 @@
-extends layout
-
-block content
-    h1= Searh
-    form#formSearch(name="search",method="post",action="/searchvideos")
-        input#inputKeyWords(type="text", placeholder="keywords", name="keywords")
-        button#btnSubmit(type="submit") search
